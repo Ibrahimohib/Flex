@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/image6"
+        android:alpha="0.3"/>
+
+    <TextView
+        android:id="@+id/the_goal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="The Goal"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        android:textColorLink="@android:color/holo_orange_light" />
+
+    <ProgressBar
+        android:id="@+id/goal_progress_bar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:progress="30"/>
+
+    <TextView
+        android:id="@+id/tv_goal_dollar_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/goal_progress_bar"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="25dp"
+        android:text="$XXX.XX"
+        android:textColor="@android:color/black"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tv_goal_breakdown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_goal_dollar_amount"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Goal Breakdown"
+        android:textColor="@android:color/black"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/tv_current_saving"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_goal_breakdown"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="75dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:text="Monthly Savings"
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tv_goal_dollar_amount2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/tv_goal_breakdown"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="20dp"
+        android:text="$XXX.XX"
+        android:textSize="15sp"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:id="@+id/tv_time_remaining"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_current_saving"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="75dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:text="Time Remaining"
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tv_time_remaining_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/tv_current_saving"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="25dp"
+        android:text="time remaing"
+        android:textSize="15sp"
+        android:textColor="@android:color/black"/>
+
+    <EditText
+        android:id="@+id/payment_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_time_remaining"
+        android:hint="Enter Payment"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="0dp"
+        android:textColor="@android:color/holo_green_light"
+        android:textCursorDrawable="@android:color/holo_orange_light" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/payment_amount"
+        android:text="Update Info"
+        android:textColor="@android:color/black"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/transparent"
+        style="@style/Base.Widget.AppCompat.Button.Borderless"/>
+
+    <Button
+        android:id="@+id/need_motivation_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Need Motivation?"
+        android:layout_alignParentBottom="true"
+        style="@style/Base.Widget.AppCompat.Button.Borderless"
+        android:layout_centerHorizontal="true"
+        android:textSize="15sp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@android:color/black" />
+</RelativeLayout>
